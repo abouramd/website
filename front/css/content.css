@@ -1,0 +1,52 @@
+.my-container .content {
+  border: 1px solid var(--color-black);
+}
+
+.my-container .content .my-slid {
+  width: 50%;
+  height: 100%;
+  padding: 5px;
+  margin: 5px;
+  border: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.my-container .content .my-slid .slid-item {
+  border: inherit;
+  margin: 3px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.my-container .content .my-slid input,
+.my-container .content .my-slid label p {
+  display: none;
+}
+
+.my-container .content .my-slid label {
+  width: auto;
+}
+
+.my-container .content .my-slid label h3 {
+  padding: 5px;
+  writing-mode: vertical-rl;
+
+}
+
+.my-container .content .my-slid input:checked + label {
+  background-color: var(--color-blue);
+  width: 100%;
+}
+
+.my-container .content .my-slid input:checked + label h3 {
+  writing-mode: horizontal-tb;
+}
+
+.my-container .content .my-slid input:checked+label p {
+  display: block;
+}
+
+/* .my-container .content .my-slid input:checked + label h3 {
+  writing-mode: horizontal-tb;
+} */

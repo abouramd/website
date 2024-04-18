@@ -1,0 +1,26 @@
+name: front
+
+services:
+  live-server:
+    image: live-server
+    container_name: live-server
+    pull_policy: never
+    build:
+      context: .
+      # no_cache: true
+    # ports:
+    #   - 8080:8080
+    network_mode: host
+    volumes:
+      - ./front:/front
+    init: true
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    # networks: 
+    #   - host
+
+# networks:
+#   host:
+#     name: my-net
+#     external: true

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('content.css');
+
+:root {
+    --color-black: #080708;
+    --color-blue: #1465FF;
+    --color-white-Secondary: #F6f6f4;
+    --color-white-Primary: #FFFFFF;
+}
+
+
+* {
+    transition-duration: 1s;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    scrollbar-color: var(--color-white-Secondary) var(--color-white-Primary);
+}
+
+
+body {
+    font-family: Cairo, s;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    background-color: var(--color-white-Secondary);
+    width: 100vw;
+    height: 100vh;
+    min-width: 600px;
+    min-height: 400px;
+}
+
+
+body .my-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 70px 3fr 1fr;
+    gap: 10px;
+    /* padding: 5px; */
+}
+
+body .my-container:only-child {
+    border: 4px solid black;
+}
+
+body .my-container header {
+    grid-column: 1 / -1;
+}
+
+/* body .my-container .col1 {
+    background-color: rgb(32, 179, 27);
+    grid-row: 3;
+}
+
+body .my-container .col2 {
+    background-color: rgb(32, 179, 27);
+    grid-row: 5;
+}
+
+body .my-container .col3 {
+    background-color: rgb(32, 179, 27);
+    grid-row: 7;
+}
+
+body .my-container .col1,
+body .my-container .col2,
+body .my-container .col3 {
+    grid-column: 2 / 7;
+}
+
+body .my-container .col4 {
+    background-color: rgb(32, 179, 27);
+    grid-column: 8 / -2;
+    grid-row: 3 / 8;
+} */
+
+.my-container .content {
+    /* background-color: rgb(32, 179, 27); */
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+/* body .my-container .col5 {
+    background-color: rgb(32, 179, 27);
+    grid-column: 1 / 8;
+    grid-row: 9;
+}
+
+body .my-container .col6 {
+    background-color: rgb(32, 179, 27);
+    grid-column: 8 / -1;
+    grid-row: 9;
+} */
